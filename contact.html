@@ -140,7 +140,7 @@ https://templatemo.com/tm-589-lugx-gaming
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                        <button type="submit" id="submit" class="orange-button">Send Message Now</button>
                       </fieldset>
                     </div>
                   </div>
@@ -169,6 +169,19 @@ https://templatemo.com/tm-589-lugx-gaming
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyUXnkNhpdhxnqrel3qPMktQbfalCUsa16lthN2uj0ZWlDJbgvwufcGy74DdTQhE0sQcQ/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+e.preventDefault()
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+.then(response => alert("Thank you! your form is submitted successfully." ))
+.then(() => { window.location.reload(); })
+.catch(error => console.error('Error!', error.message))
+})
+</script>
 
   </body>
 </html>
