@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #414ebd;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #c6ebc9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -56,4 +56,108 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+/* Your existing styles remain the same */
+
+/* Additional styles for placing the heading above the form */
+.logo {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+/* Existing styles remain the same */
+
+.heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.heading h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.heading h2 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.heading p {
+    font-size: 16px;
+    margin: 0;
+}
+/* Your existing button styles remain the same */
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 10px;
+    }
+
+    .form-container {
+        margin: 0;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .heading p {
+        font-size: 16px;
+    }
+
+    input {
+        padding: 8px;
+    }
+
+    button {
+        padding: 10px;
+    }
+    body {
+        align-items: flex-start;
+    }
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 100%; /* Adjust as needed for smaller screens */
+        margin-bottom: 10px;
+    }
+
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .heading p {
+        font-size: 14px;
+    }
 }
